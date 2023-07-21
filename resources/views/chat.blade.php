@@ -14,7 +14,7 @@
 
     <div id="chat">
         @foreach ($mensagens as $mensagem)
-            <p><strong>{{ $mensagem->nome }}:</strong> {{ $mensagem->mensagem }}</p>
+            <p><strong>{{ $mensagem->nome }}:</strong> {{ $mensagem->mensagem }} <br> {{ $mensagem->created_at }}</p>
         @endforeach
     </div>
 
